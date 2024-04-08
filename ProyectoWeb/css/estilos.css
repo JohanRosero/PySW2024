@@ -1,0 +1,350 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../imagenes/img/Unistar.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    margin: 0;
+    height: auto;
+}
+
+header {
+    max-width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    box-shadow: 0 0 5px rgba(255, 255, 255);
+}
+
+.navbar a {
+    color: rgb(27, 136, 144);
+    font-family: monospace;
+    font-size: large;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.navbar a:hover {
+    background-color: #222322;
+    color: rgb(247, 242, 242);
+}
+
+#barra {
+    max-width: 100%;
+    padding: 10px;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: 50%;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+.accordion-container {
+    max-width: 99%;
+    margin: auto;
+    padding: 10 10px;
+
+}
+
+.accordion-header {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border: cadetblue;
+    margin: auto;
+    padding: 15px;
+    background-color: rgb(27, 136, 144);
+    color: azure;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 1px solid rgb(19, 98, 103);
+}
+
+.accordion-header summary {
+    justify-self: center;
+    font-weight: bold;
+    cursor: alias;
+}
+
+.accordion-header p {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.accordion-header ul li {
+    font-family: monospace;
+    color: #f0f0f0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.square {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 180px;
+    height: 120px;
+    background-color: #f0f0f0;
+    padding-top: 30px;
+    border-radius: 10%;
+    color: rgb(27, 136, 144);
+    border: 2px solid rgb(27, 136, 144);
+
+}
+
+.circle {
+    position: absolute;
+    top: -20px;
+    left: 60px;
+    width: 60px;
+    height: 60px;
+    background-color: azure;
+    border-radius: 50%;
+    border: 2px solid rgb(27, 136, 144);
+    margin: auto;
+    transition: transform 0.3s ease;
+}
+
+.circle img {
+    padding-top: 10px;
+    display: block;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+}
+
+.circle:hover {
+    transform: scale(1.4) rotate(45deg);
+}
+
+article {
+    background-color: #222322;
+    height: 60%;
+    padding: 20px;
+    opacity: 0.95;
+}
+
+p[name="judicial"] {
+    color: #f0f0f0;
+    font-size: large;
+    text-align: center;
+}
+
+footer {
+    max-width: 100%;
+    height: 15%;
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    background-color: #000000;
+    color: rgb(27, 136, 144);
+    font-family: monospace;
+    box-shadow: 0 0 5px #f0f0f0;
+
+}
+
+.contenido-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5px;
+    background-color: #000000;
+    font-family: monospace;
+}
+
+.columnaFooter {
+    flex: 1;
+    margin: 10 0px;
+    text-align: center;
+}
+
+/* Estilos para el formulario */
+
+.columna {
+    flex: 1;
+    margin: 10 0px;
+    text-align: left;
+}
+
+
+form {
+    width: 50%;
+    border-radius: 5px;
+    border-color: 1px solid rgb(116, 115, 115);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: larger;
+    opacity: 0.95;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid rgb(216, 217, 217);
+    flex-wrap: wrap;
+
+}
+
+label {
+    display: flex;
+    width: 30%;
+    text-align: left;
+    margin: auto;
+    padding-left: 10px;
+}
+
+input,
+select {
+    height: 100%;
+    margin: 1vh;
+    border: none;
+    padding: 10px;
+}
+
+strong {
+    color: rgb(214, 3, 3);
+
+}
+
+input[name="advertencia"] {
+    width: 100%;
+    background-color: rgb(253, 235, 117);
+    border: 2px solid rgb(180, 101, 22);
+    border-radius: 2px;
+    padding: 8px;
+    margin: 2px
+}
+
+input[type="submit"] {
+    width: 45%;
+    background-color: rgb(52, 96, 205);
+    color: #f0f0f0;
+    border: 2px solid rgb(22, 66, 180);
+    border-radius: 2px;
+    padding: 8px;
+    margin: 2px
+}
+
+/* estilos para noticias */
+h3 {
+    color: brown;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    background-color: #ccc;
+}
+
+.container2 div {
+    border-right: 1px solid #a7a6a9;
+    padding: 10px;
+    margin: 2px;
+}
+
+.container2 img {
+    width: 100%;
+    height: auto;
+}
+
+.container2 div:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.slider {
+    width: 60%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider img {
+    width: 100%;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    16.67% {
+        transform: translateX(-100%);
+    }
+
+    33.33% {
+        transform: translateX(-200%);
+    }
+
+    50% {
+        transform: translateX(-300%);
+    }
+
+    66.67% {
+        transform: translateX(-400%);
+    }
+
+    83.33% {
+        transform: translateX(-500%);
+    }
+
+    100% {
+        transform: translateX(-600%);
+    }
+}
