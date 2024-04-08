@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Formulario de contacto</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div id="barra">
+                <a class="logo" href="index.html"><img src="./imagenes/img/logo poder judicial.png" alt="logo"></a>
+                <a>Poder judicial de la Provincia de Jujuy</a>
+                <a href="index.html">INICIO</a>
+                <a href="#news">INSTITUCIONAL</a>
+                <a href="noticias.html">NOTICIAS</a>
+                <a href="formulario.html">FORMULARIO</a>
+                <a href="#about">SERVICIOS</a>
+            </div>
+        </nav>
+        <div>
+            <h1>Plataforma Digital de Gestión judicial</h1>
+            <h2>Formulario de Contacto</h2>
+        </div>
+    </header>
+    <section class="container">
+        <form>
+            <div class="row">
+                <input class="columna" type="text" name="advertencia" placeholder="Los datos Ingresados son tomados como DECLARACION JURADA">
+            </div>
+            
+            <div class="row">
+                <label class="columna" for="apellido"><strong>*</strong> Apellido:</label>
+                <input class="columna" type="text" id="apellido" name="apellido" placeholder=" Apellido">
+            </div>
+            <div class="row">
+                <label class="columna" for="nombre"><strong>*</strong>Nombre:</label>
+                <input class="columna" type="text" id="nombre" name="nombre" placeholder=" Nombre completo">
+            </div>
+            <div class="row">
+                <label class="columna" for="documento"><strong>*</strong>Documento:</label>
+
+                <select class="columna" id="documento" name="documento">
+                    <option value="opcion1">DNI</option>
+                    <option value="opcion2">PASAPORTE</option>
+                    <option value="opcion3">OTRO</option>
+                </select>
+                <label class="columna" for="numeroDni"><strong>*</strong>Numero:</label>
+                <input class="columna" type="number" id="numeroDni" name="numeroDni"
+                    placeholder="  Tu numero de documento">
+            </div>
+            <div class="row">
+                <label class="columna" for="fecha"><strong>*</strong>Fecha de Nacimiento</label>
+                <input class="columna" type="date" id="fecha" name="fecha" placeholder=" Fecha de Nacimiento">
+                <label class="columna" for="sexo"><strong>*</strong>Sexo:</label>
+                <select class="columna" id="sexo" name="sexo">
+                    <option value="opcion1">M</option>
+                    <option value="opcion2">F</option>
+                    <option value="opcion3">No quiero Informar</option>
+                </select>
+            </div>
+            <div class="row">
+                <label class="columna" for="cuit"><strong>*</strong>N CUIT:</label>
+                <input class="columna" type="number" id="cuit" name="cuit" placeholder="XX-00000000-X" required>
+                <label class="columna" for="estado"><strong>*</strong>Estado Civil:</label>
+                <select class="columna" id="estado" name="estado">
+                    <option value="opcion1">...</option>
+                    <option value="opcion2">Soltero</option>
+                    <option value="opcion3">Casado</option>
+                    <option value="opcion3">Viudo</option>
+                </select>
+            </div>
+            <div class="row">
+                <label class="columna" for="domicilio"><strong>*</strong>Domicilio real:</label>
+                <input class="columna" type="text" id="domicilio" name="domicilio"
+                    placeholder=" Domicilio para verificar ">
+            </div>
+            <div class="row">
+                <label class="columna" for="telefono"><strong>*</strong>Teléfono:</label>
+                <input class="columna" type="text" id="telefono" name="teléfono" placeholder=" ejm 15-9987665">
+            </div>
+            <div class="row">
+                <label class="columna" for="ocupación">Ocupación:</label>
+                <select class="columna" id="ocupación" name="ocupación">
+                    <option value="opcion1">SELECCIONE</option>
+                    <option value="opcion2">ABOGADO</option>
+                    <option value="opcion3">JUEZ</option>
+                    <option value="opcion3">INFORMATICO</option>
+                </select>
+            </div>
+            <div class="row">
+                <label class="columna" for="domicilio2">Domicilio Laboral:</label>
+                <input class="columna" type="text" id="domicilio2" name="domicilio2"
+                    placeholder="Lugar actual de trabajo">
+            </div>
+            <div class="row">
+                <label class="columna" for="matricula"><strong>*</strong>Matricula Profesional:</label>
+                <input class="columna" type="text" id="matricula" name="matricula">
+            </div>
+            <div class="row">
+                <label class="columna" for="titulo1">Título 1:</label>
+                <input class="columna" type="text" id="titulo1" name="titulo1">
+            </div>
+            <div class="row">
+                <label class="columna" for="titulo2">Título 2:</label>
+                <input class="columna" type="text" id="titulo2" name="titulo2">
+            </div>
+            <div class="row">
+                <input name="miBoton" type="submit" value="Enviar">
+                <input name="miBoton" type="submit" value="Cancelar">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="contenido-footer">
+            <div class="columnaFooter">
+                <p>Escribenos a min@poderJudicial.com.</p>
+                <p>Instagram @poderJudicial</p>
+            </div>
+            <div class="columnaFooter">
+                <p>S.S Jujuy, Alberdi 1800 - piso 04. </p>
+                <p>Tel 0388 455667.</p>
+            </div>
+            <div class="columnaFooter">
+                <p>&copy; 2024 Web. Todos los derechos reservados.</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
